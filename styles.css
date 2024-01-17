@@ -23,7 +23,8 @@ body {
   
   .profile {
     max-width: 400px;
-    margin: 50px auto;
+
+    margin: 100px auto;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #e0e0e0;
     border-radius: 12px;
