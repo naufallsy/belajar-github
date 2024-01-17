@@ -1,3 +1,87 @@
+/* styles.css */
+
 body {
-    background-color:rgb(31, 180, 38);
-}
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #ff0000, #ffaa00, #ffff00, #aaff00, #00ff00, #00ffaa, #00ffff, #0000ff, #aa00ff, #ff00ff);
+    background-size: 2000% 100%;
+    animation: rainbowBackground 15s linear infinite;
+  }
+  
+  @keyframes rainbowBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .profile {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .profile:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Sisanya tetap sama seperti sebelumnya */
+  
+  
+  .profile img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .profile-content {
+    padding: 20px;
+  }
+  
+  .profile h1 {
+    font-size: 28px; /* Menyesuaikan ukuran font judul */
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile p {
+    font-size: 18px; /* Menyesuaikan ukuran font teks */
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .profile p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .profile-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-link {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .profile-link:hover {
+    color: #2075c4;
+  }
+  
